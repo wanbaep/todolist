@@ -4,7 +4,7 @@ public class TodoSqls {
 	static final String DELETE_BY_ID =
 			"DELETE FROM todo WHERE id= :id";
 	static final String DELETE_BY_COMP =
-			"DELETE FROM todo WHERE id = :id";
+			"DELETE FROM todo WHERE completed = :completed";
 	static final String UPDATE_TODO_BY_ID = 
 			"UPDATE todo SET completed = :completed WHERE id = :id";
 	static final String COUNT_TODO =
