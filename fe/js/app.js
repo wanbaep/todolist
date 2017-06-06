@@ -41,7 +41,7 @@
 
 					$('.todo-list').append(tag);
 				}
-				//$('.todo-count').find('strong').text(itemleft);
+
 				itemLeft();
 			}
 		})
@@ -157,16 +157,18 @@
 
 	}
 
+	//
+	/*Event Controller
+	 *
+	*/
 
 	//active=0, completed=1, all=2
 	$('#active').click(function(){
 		changeSelected('#active');
 		showTodoByOption(0);
-		//selectTodoByComp(0);
-		//$('#all').removeClass('selected');
-		//$('#active').addClass('selected');
+
 	});
-	//$('#6').toggleClass('completed');
+
 
 	$('#completed').click(function(){
 		changeSelected('#completed');
